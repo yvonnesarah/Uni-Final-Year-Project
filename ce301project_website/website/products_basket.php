@@ -31,7 +31,6 @@ include("functions.php");
 <th>Remove</th>
 <th>Products</th>
 <th>Age Groups</th>
-<th>Quantity</th>
 <th>Total Price</th>
 </tr>
 
@@ -70,7 +69,6 @@ global $con;
 		<td><?php echo $age_groups; ?><br>
        <img src="products_images/<?php echo $product_image;?>" width="60" height="60"/>
        </td>
-<td><input type="text" size="4" name="quantity" value="<?php echo $_SESSION['quantity'];?>"/></td>
 	   <?php
 		if(isset($_POST['update_basket'])){
 	
@@ -99,7 +97,6 @@ global $con;
 	
 <tr align="center">
 <td colspan="0"><input type="submit" name="remove_basket" value="Remove Basket"/></td>
-<td colspan="0"><input type="submit" name="update_basket" value="Update Basket"/></td>
 <td colspan="0"><input type="submit" name="continue" value="Continue Shopping"/></td>
 <td><button><a href="checkout.php" style="text-decoration:none; color:white">Checkout</a></button></td>
 </tr>
